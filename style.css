@@ -206,6 +206,10 @@ header nav .website-items ul{
     width: 60%;
     text-align: center;
 }
+.reasons h3{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
 .reasons img{
     width: 50%;
 }
@@ -220,4 +224,76 @@ footer{
     justify-content: center;
     align-items: center;
     background-color: #efefefef;
+}
+
+
+/* Mobile Devices */
+@media screen and (max-width: 576px) {
+    header, .hero-section, .products-section, .best{
+        padding: 0 5rem;
+    }  
+    .website-name h1{
+        font-size: 2rem;
+    }
+    .website-items ul li a{
+        margin-left: 1rem;
+        font-size: 1.5rem;
+    }
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+    .hero-img, .hero-section .hero-content{
+        width: 100%;
+    }
+    .hero-section .hero-content h1{
+        font-size: 2rem;
+        width: 100%;
+        line-height: 6rem;
+        margin-bottom: 2rem;
+    }
+    .hero-section .hero-content p{
+        font-size: 2rem;
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    .hero-section .hero-img {
+        width: 100%;
+    }
+    .hero-section .hero-img img {
+        width: 100%;
+    }
+    .hero-section .hero-content {
+        height: 40vh;
+    }
+
+    /* Features Section */
+    .products-section h1{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        line-height: 6rem;
+    }
+    .products-section .products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Reasons */
+    .best h1{
+        font-size: 2rem;
+        line-height: 6rem;
+        margin-bottom: 2rem;
+    }
+
+    .reasons-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5rem;
+    }
+    .reasons h3{
+        font-size: 2rem;
+    }
+
+    /* Footer */
+    footer{
+        font-size: 1rem;
+        margin-left: 10rem;
+    }
 }
