@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    /* Smooth effect can be showen */
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1440px;
+}
+h2, h3{
+    color: #606d5f;
+}
+
+p, li, a, button{
+    color: #888888;
+}
+
+p{
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-size: normal;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+li{
+    list-style: none;
+}
+button{
+    padding: 1rem 3rem;
+    border: 20px;
+    border: none;
+    outline: none;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: normal;
+    font-weight: normal;
+    font-style: 2rem;
+}
+
+/* Header Section */
+header{
+    padding: 0 20rem;
+    width: 100%;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    height: 12rem;
+    align-items: center;
+}
+
+header nav .website-name{
+    font-size: 3rem;
+}
+
+header nav .website-items ul{
+    display: flex;
+}
+
+.website-items ul li{
+    font-size: 2rem;
+    line-height: 2rem;
+    text-transform: capitalize;    
+}
+
+.website-items ul li a{
+    margin-left: 4rem;
+    transition: all 0.2s;
+}
+
+.website-items ul li a:hover{
+    color: #4b709e;
+}
