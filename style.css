@@ -232,7 +232,7 @@ footer{
     header, .hero-section, .products-section, .best{
         padding: 0 5rem;
     }  
-    .website-name h1{
+    header nav .website-name h1{
         font-size: 2rem;
     }
     .website-items ul li a{
@@ -295,5 +295,99 @@ footer{
     footer{
         font-size: 1rem;
         margin-left: 10rem;
+    }
+}
+
+/* Tablet Devices */
+@media screen and (min-width: 577px) and (max-width: 900px) {
+    header, .hero-section, .products-section, .best{
+        padding: 0 9rem;
+    }  
+    .hero-section, .products-section{
+        margin-bottom: 10rem;
+    }
+    header nav .website-name h1{
+        font-size: 3rem;
+    }
+    .website-items ul li a{
+        margin-left: 2rem;
+        font-size: 2rem;
+    }
+    .hero-section{
+        flex-direction: column-reverse;
+    }
+    .hero-img, .hero-section .hero-content{
+        width: 100%;
+    }
+    .hero-section .hero-content h1{
+        font-size: 4rem;
+        width: 100%;
+        line-height: 6rem;
+        margin-bottom: 2rem;
+    }
+    .hero-section .hero-content p{
+        font-size: 2rem;
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    .hero-section .hero-img {
+        width: 100%;
+    }
+    .hero-section .hero-img img {
+        width: 100%;
+    }
+    .hero-section .hero-content {
+        height: 40vh;
+    }
+
+    /* Features Section */
+    .products-section h1{
+        font-size: 4rem;
+        margin-bottom: 4rem;
+        line-height: 6rem;
+    }
+    .products-section .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Reasons */
+    .best h1{
+        font-size: 4rem;
+        line-height: 6rem;
+        margin-bottom: 4rem;
+    }
+
+    .reasons-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+    .reasons h3{
+        font-size: 2rem;
+    }
+
+    /* Footer */
+    footer{
+        font-size: 1.5rem;
+        margin-left: 20rem;
+    }
+}
+
+ /* Tablet Devices */
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    header, .hero-section, .products-section, .best{
+        padding: 0 10rem;
+    }  
+    header nav .website-name h1{
+        font-size: 3rem;
+    }
+    .hero-section .hero-content h1{
+        width: 35rem;
+        font-size: 4rem;
+    }
+    .hero-section .hero-content p{
+        width: 35rem;
+    }
+    .reasons h3{
+        font-size: 2rem;
     }
 }
